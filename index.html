@@ -45,7 +45,7 @@
     <div>
       <div class="options">
         <div class="container">
-          <div class="options__item">
+          <div class="options__item options__item--left">
             <img
               src="./images/workflow.png"
               alt="workflow"
@@ -58,7 +58,7 @@
             </p>
             <a href="" class="options__item-btn btn">See more</a>
           </div>
-          <div class="options__item">
+          <div class="options__item options__item--right">
             <img
               src="./images/analytics.png"
               alt="analytics"
@@ -149,31 +149,249 @@
             <div class="drag__img">
               <img src="./images/comleted.png" alt="in progress" />
             </div>
-            <div class="drag_here">
+            <div class="drag__here">
               <p>Drop here</p>
             </div>
           </div>
         </div>
         <div class="drag__slider">
           <div class="drag__slider-title">Drag & Drop</div>
-          <div class="drag__slider-desc">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <p>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
+          <div class="drag__slide">
+            <div class="drag__slider-desc drag__slider-desc--current">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="drag__slider-desc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+            <div class="drag__slider-desc">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <p>
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
           </div>
           <div class="drag__arrows">
-            <img src="./images/left-arrow.png" alt="arrow left" /><img
-              src="./images/right-arrow.png"
-              alt="arrow right"
-            />
+            <button onclick="changeSlide(-1)">
+              <img src="./images/left-arrow.png" alt="arrow left" />
+            </button>
+            <button onclick="changeSlide(1)">
+              <img src="./images/right-arrow.png" alt="arrow right" />
+            </button>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="template">
+      <div class="container">
+        <h3 class="template__title">Powerfull PSD Template</h3>
+        <p class="template__desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+
+        <div class="template__box">
+          <div class="template__img">
+            <img src="./images/template.png" alt="template" />
+          </div>
+          <div class="template__tip template__tip--left">
+            <div class="template__tip-title">Clean & modern layout</div>
+            <div class="template__tip-decor">
+              <div class="template__decor-circle template__decor-circle--right">
+                <div></div>
+              </div>
+            </div>
+            <div class="template__tip-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor
+            </div>
+          </div>
+          <div class="template__tip template__tip--right">
+            <div class="template__tip-title">Easy to customize</div>
+            <div class="template__tip-decor">
+              <div class="template__decor-circle template__decor-circle--left">
+                <div></div>
+              </div>
+            </div>
+            <div class="template__tip-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pricing">
+      <div class="container">
+        <h2 class="pricing__title">Check our pricing!</h2>
+        <div class="pricing__items">
+          <div class="pricing__item">
+            <h3 class="pricing__item-title">BRONZE PLAN</h3>
+            <div class="pricing__item-price">
+              $<span class="pricing__item-number">19</span
+              ><span class="pricing__item-mon">/mon</span>
+            </div>
+            <ul class="pricing__list">
+              <li class="pricing__list-item">
+                <img src="./images/check.png" alt="check" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+              <li class="pricing__list-item">
+                <img src="./images/check.png" alt="check" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+              <li class="pricing__list-item">
+                <img src="./images/xmark.png" alt="uncheck" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+              <li class="pricing__list-item">
+                <img src="./images/xmark.png" alt="uncheck" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing__item">
+            <h3 class="pricing__item-title">SILVER PLAN</h3>
+            <div class="pricing__item-price">
+              $<span class="pricing__item-number">49</span
+              ><span class="pricing__item-mon">/mon</span>
+            </div>
+            <ul class="pricing__list">
+              <li class="pricing__list-item">
+                <img src="./images/check.png" alt="check" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+              <li class="pricing__list-item">
+                <img src="./images/check.png" alt="check" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+              <li class="pricing__list-item">
+                <img src="./images/check.png" alt="check" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+              <li class="pricing__list-item">
+                <img src="./images/xmark.png" alt="uncheck" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+            </ul>
+          </div>
+          <div class="pricing__item">
+            <h3 class="pricing__item-title">GOLD PLAN</h3>
+            <div class="pricing__item-price">
+              $<span class="pricing__item-number">99</span
+              ><span class="pricing__item-mon">/mon</span>
+            </div>
+            <ul class="pricing__list">
+              <li class="pricing__list-item">
+                <img src="./images/check.png" alt="check" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+              <li class="pricing__list-item">
+                <img src="./images/check.png" alt="check" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+              <li class="pricing__list-item">
+                <img src="./images/check.png" alt="check" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+              <li class="pricing__list-item">
+                <img src="./images/check.png" alt="check" />
+                <p>Lorem ipsum dolor sit am</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="pricing__desc">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris.
+        </p>
+        <button class="btn pricing__btn">Join now!</button>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <p class="footer__license">© 2016 Merkury All Right Reserved</p>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#">Pricing</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Blog</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <ul class="footer__socials">
+            <li class="foooter__social">
+              <img
+                src="./images/facebook.png"
+                alt="facebook"
+                class="footer__social-icon"
+              />
+            </li>
+            <li class="foooter__social">
+              <img
+                src="./images/twitter.png"
+                alt="twitter"
+                class="footer__social-icon"
+              />
+            </li>
+            <li class="foooter__social">
+              <img
+                src="./images/google.png"
+                alt="google"
+                class="footer__social-icon"
+              />
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <script>
+      let currentSlide = 0;
+      let isAnimating = false;
+
+      function changeSlide(direction) {
+        if (isAnimating) return;
+
+        isAnimating = true;
+
+        const slides = document.querySelectorAll(".drag__slider-desc");
+        slides[currentSlide].classList.remove("drag__slider-desc--current");
+
+        setTimeout(() => {
+          currentSlide =
+            (currentSlide + direction + slides.length) % slides.length;
+          slides[currentSlide].classList.add("drag__slider-desc--current");
+          isAnimating = false;
+        }, 500);
+      }
+    </script>
   </body>
 </html>
