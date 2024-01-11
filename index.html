@@ -18,12 +18,20 @@
             </h1>
             <nav class="nav">
               <ul class="nav__list">
-                <li><a href="">Features</a></li>
-                <li><a href="">Pricing</a></li>
+                <li><a id="page-link" href="#features">Features</a></li>
+                <li>
+                  <a id="page-link" href="#pricing">Pricing</a>
+                </li>
                 <li><a href="">Blog</a></li>
                 <li><a href="">Contact</a></li>
+                <li><a class="btn nav__btn" href="">Login</a></li>
+                <button class="nav__close">
+                  <img src="./images/close.svg" alt="close" />
+                </button>
               </ul>
-              <a class="btn nav__btn" href="">Login</a>
+              <button class="nav__open">
+                <img src="./images/open.svg" alt="open-nav" />
+              </button>
             </nav>
           </div>
         </header>
@@ -42,7 +50,7 @@
       </div>
     </div>
 
-    <div>
+    <div id="features">
       <div class="options">
         <div class="container">
           <div class="options__item options__item--left">
@@ -156,43 +164,45 @@
         </div>
         <div class="drag__slider">
           <div class="drag__slider-title">Drag & Drop</div>
-          <div class="drag__slide">
-            <div class="drag__slider-desc drag__slider-desc--current">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-            <div class="drag__slider-desc">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-            <div class="drag__slider-desc">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <p>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
+          <div class="drag__frame">
+            <div class="drag__slide">
+              <div class="drag__slider-desc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="drag__slider-desc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <div class="drag__slider-desc">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
             </div>
           </div>
           <div class="drag__arrows">
-            <button onclick="changeSlide(-1)">
+            <button id="left">
               <img src="./images/left-arrow.png" alt="arrow left" />
             </button>
-            <button onclick="changeSlide(1)">
+            <button id="right">
               <img src="./images/right-arrow.png" alt="arrow right" />
             </button>
           </div>
@@ -242,7 +252,7 @@
       </div>
     </div>
 
-    <div class="pricing">
+    <div id="pricing" class="pricing">
       <div class="container">
         <h2 class="pricing__title">Check our pricing!</h2>
         <div class="pricing__items">
@@ -337,7 +347,7 @@
         <nav class="footer__nav">
           <ul class="footer__list">
             <li class="footer__list-item">
-              <a href="#">Pricing</a>
+              <a id="page-link" href="#pricing">Pricing</a>
             </li>
             <li class="footer__list-item">
               <a href="#">Blog</a>
@@ -373,25 +383,6 @@
       </div>
     </div>
 
-    <script>
-      let currentSlide = 0;
-      let isAnimating = false;
-
-      function changeSlide(direction) {
-        if (isAnimating) return;
-
-        isAnimating = true;
-
-        const slides = document.querySelectorAll(".drag__slider-desc");
-        slides[currentSlide].classList.remove("drag__slider-desc--current");
-
-        setTimeout(() => {
-          currentSlide =
-            (currentSlide + direction + slides.length) % slides.length;
-          slides[currentSlide].classList.add("drag__slider-desc--current");
-          isAnimating = false;
-        }, 500);
-      }
-    </script>
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
