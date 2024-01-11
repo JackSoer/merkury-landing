@@ -3,12 +3,13 @@
 html,
 body {
   scroll-behavior: smooth !important;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: white;
-  overflow-x: hidden;
 }
 
 .container {
@@ -190,6 +191,8 @@ body {
   display: flex;
   gap: 20px;
   align-items: center;
+  justify-content: space-between;
+  padding-right: 0;
 }
 
 .browser__content {
@@ -200,6 +203,7 @@ body {
 
 .browser__img {
   max-width: 50%;
+  overflow: hidden;
 }
 
 .browser__title {
