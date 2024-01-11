@@ -878,6 +878,11 @@ body {
   .footer .container {
     flex-direction: column;
   }
+
+  .pricing__btn::before,
+  .pricing__btn::after {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 550px) {
