@@ -1,3 +1,5 @@
+import "../css/main.css";
+
 const slider = document.querySelector(".drag__slide");
 const slides = document.querySelectorAll(".drag__slider-desc");
 const navMenu = document.querySelector(".nav__list");
