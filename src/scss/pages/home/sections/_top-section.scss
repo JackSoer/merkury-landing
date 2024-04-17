@@ -1,0 +1,52 @@
+.top-section {
+  background-color: $text-color;
+  padding: 25px 0 200px 0;
+  position: relative;
+}
+
+.top-section__bg {
+  height: 817px;
+  background: url("../../images/grid.png") 50% / cover no-repeat,
+    url("../../images/bg.png") 50% 115px / contain no-repeat;
+}
+
+.top-section__img {
+  position: absolute;
+  bottom: -170px;
+  width: 100%;
+}
+
+.top-section__img img {
+  display: block;
+  box-shadow: 0 0 50px 1px $link-color;
+  margin: 0 auto;
+}
+
+.top-section__intro .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-section__intro-title {
+  font-size: 60px;
+  font-weight: 100;
+  color: #ffffff;
+}
+
+.top-section__intro-subtitle {
+  font-size: 36px;
+  color: $secondary-color;
+  margin-bottom: 70px;
+}
+
+.top-section__intro-btn {
+  background-color: $link-color;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  padding: 15px 50px;
+}

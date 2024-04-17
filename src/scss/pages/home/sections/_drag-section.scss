@@ -1,0 +1,146 @@
+.drag {
+  padding: 100px 0;
+
+  background: url("../../images/grid.png") 50% / cover no-repeat,
+    url("../../images/bg.png") 50% / contain no-repeat;
+  background-color: $text-color;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  &__example {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__example-in-progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__example-text {
+    font-size: 30.6px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+    span {
+      color: $secondary-color;
+    }
+  }
+
+  &__here {
+    border: 1px solid $secondary-color;
+    width: 390px;
+    height: 101px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: $secondary-color;
+    }
+  }
+
+  &__example-column {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    position: relative;
+  }
+
+  &__flying-img {
+    position: absolute;
+    left: -35px;
+    bottom: -75px;
+  }
+
+  &__hand {
+    position: absolute;
+    right: -65px;
+    bottom: -60px;
+    z-index: 1000;
+    background-color: rgba(38, 50, 76, 0.2);
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+      background-color: rgba(56, 68, 93, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      width: 76px;
+      height: 76px;
+
+      img {
+        display: block;
+        position: relative;
+        left: -2px;
+      }
+    }
+  }
+
+  &__frame {
+    overflow: hidden;
+    max-width: 500px;
+  }
+
+  &__slider-title {
+    font-size: 60px;
+    font-weight: 100;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+
+  &__slider-desc {
+    font-size: 18px;
+    color: $secondary-color;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 40px;
+    line-height: 30px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__slider {
+    padding-top: 50px;
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    transition: all 1s ease;
+    width: 1500px;
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    button {
+      background-color: transparent;
+      border: none;
+    }
+
+    img {
+      cursor: pointer;
+    }
+  }
+}

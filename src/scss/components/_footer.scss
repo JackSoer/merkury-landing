@@ -1,0 +1,38 @@
+.footer {
+  padding: 60px 0;
+  background-color: $text-color;
+  color: $secondary-color;
+  font-size: 18px;
+
+  .container {
+    max-width: 1500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+  }
+
+  &__list-item {
+    a {
+      color: $secondary-color;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+  }
+}

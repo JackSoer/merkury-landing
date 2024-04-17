@@ -1,0 +1,118 @@
+.template {
+  padding: 85px 0;
+  background-color: #f6f7fa;
+}
+
+.template__title,
+.template__desc {
+  text-align: center;
+}
+
+.template__title {
+  font-size: 60px;
+  font-weight: 100;
+  color: $text-color;
+  margin-bottom: 40px;
+}
+
+.template__img {
+  width: 100%;
+}
+
+.template__img img {
+  width: 100%;
+}
+
+.template__desc {
+  line-height: 30px;
+  font-size: 18px;
+  color: $secondary-color;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.template__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.template__tip {
+  position: absolute;
+  max-width: 660px;
+  width: 100%;
+}
+
+.template__tip--left {
+  left: 50px;
+  top: 110px;
+}
+
+.template__tip--right {
+  right: 50px;
+  bottom: 250px;
+}
+
+.template__tip--right .template__tip-title,
+.template__tip--right .template__tip-desc {
+  text-align: right;
+}
+
+.template__tip--right .template__tip-desc {
+  margin-left: auto;
+}
+
+.template__tip-title {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: $text-color;
+  margin-bottom: 12px;
+}
+
+.template__tip-desc {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: $secondary-color;
+  max-width: 235px;
+}
+
+.template__tip-decor {
+  height: 2px;
+  background-color: $link-color;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.template__decor-circle {
+  width: 46px;
+  height: 46px;
+  background-color: rgba(153, 181, 255, 0.6);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.template__decor-circle--left {
+  position: absolute;
+  top: -23px;
+  left: -30px;
+}
+
+.template__decor-circle--right {
+  position: absolute;
+  top: -23px;
+  right: -23px;
+}
+
+.template__decor-circle div {
+  width: 30px;
+  height: 30px;
+  background-color: $link-color;
+  border-radius: 50%;
+}
